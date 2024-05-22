@@ -8,11 +8,10 @@ public class CursoDTO extends RepresentationModel<CursoDTO> {
     private String titulo;
     private String descricao;
     private String instrutor;
-    private int duracao; // Duração em horas
+    private int duracao; 
     private String nivel;
     private double preco;
 
-    // Getters e Setters
     public Long getId() {
         return id;
     }
