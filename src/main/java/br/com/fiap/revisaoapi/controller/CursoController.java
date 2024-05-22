@@ -1,4 +1,5 @@
 package br.com.fiap.revisaoapi.controller;
+
 import br.com.fiap.revisaoapi.dto.CursoDTO;
 import br.com.fiap.revisaoapi.model.Curso;
 import br.com.fiap.revisaoapi.service.CursoService;
@@ -15,6 +16,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
@@ -109,5 +111,3 @@ public class CursoController {
         return ResponseEntity.noContent().build();
     }
 }
-
-

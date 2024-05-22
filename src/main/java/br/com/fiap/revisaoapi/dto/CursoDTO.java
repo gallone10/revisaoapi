@@ -1,4 +1,4 @@
- package br.com.fiap.revisaoapi.dto;
+package br.com.fiap.revisaoapi.dto;
 
    
 import org.springframework.hateoas.RepresentationModel;
