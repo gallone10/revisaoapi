@@ -1,3 +1,4 @@
+package br.com.fiap.revisaoapi.controller;
 import br.com.fiap.revisaoapi.dto.CursoDTO;
 import br.com.fiap.revisaoapi.model.Curso;
 import br.com.fiap.revisaoapi.service.CursoService;
