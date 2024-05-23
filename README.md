@@ -94,3 +94,91 @@ Body:
 | Parâmetro | Tipo   | Descrição                                     |
 |:----------|:-------|:----------------------------------------------|
 | `id`      | `Long` | **Obrigatório**. Id do cliente a ser excluído |
+
+## API Reference
+
+#### Obter todos os cursos (findAll cursoDTO)
+
+```http
+  GET /cursos
+```
+
+#### Obter cliente por id (findById cursoDTO)
+
+```http
+  GET /cursos/${id}
+```
+
+| Parâmetro | Tipo   | Descrição                                    |
+|:----------|:-------|:---------------------------------------------|
+| `id`      | `Long` | **Obrigatório**. Id do curso a ser buscado |
+
+#### Gravar cursos (save)
+
+```http
+  POST /cursos
+```
+
+Body:
+
+```json
+{
+   "titulo": "Python",
+    "descricao": "Curso de python",
+    "instrutor" : "Leonardo",
+    "duracao" : 1,
+    "nivel" : "2",
+    "preco" : 20
+}
+```
+
+| Parâmetro | Tipo     | Descrição                       |
+|:----------|:---------|:--------------------------------|
+| `titulo`    | `String` | Título do curso  |
+| `descricao`   | `String` | Descrição do curso |
+| `instrutor`   | `String` | Instrutor do curso  |
+| `duracao`   | `int` | Duração do curso |
+| `nivel`   | `String` | Nível do curso |
+| `preco`   | `double` | Preço do curso  |
+
+#### Atualizar curso (update)
+
+```http
+  PUT /cursos/${id}
+```
+
+| Parâmetro | Tipo   | Descrição                                       |
+|:----------|:-------|:------------------------------------------------|
+| `id`      | `Long` | **Obrigatório**. Id do curso a ser atualizado |
+
+Body:
+
+```json
+{
+    "titulo": "Python",
+    "descricao": "Curso de python",
+    "instrutor" : "Leonardo",
+    "duracao" : 1,
+    "nivel" : "2",
+    "preco" : 20
+}
+```
+
+| Parâmetro | Tipo     | Descrição                       |
+|:----------|:---------|:--------------------------------|
+| `titulo`    | `String` | Título do curso  |
+| `descricao`   | `String` | Descrição do curso |
+| `instrutor`   | `String` | Instrutor do curso  |
+| `duracao`   | `int` | Duração do curso |
+| `nivel`   | `String` | Nível do curso |
+| `preco`   | `double` | Preço do curso  |
+
+#### Excluir curso (delete)
+
+```http
+  DELETE /cursos/${id}
+```
+
+| Parâmetro | Tipo   | Descrição                                     |
+|:----------|:-------|:----------------------------------------------|
+| `id`      | `Long` | **Obrigatório**. Id do curso a ser excluído |
